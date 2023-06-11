@@ -1,0 +1,315 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+/*********************************************************** Navigation bar and Logo ***********************************************************/
+nav {
+    display: flex !important;
+    justify-content: space-between;
+    background-image: url(img/bgblack.png);
+    height: 95px;
+    text-align: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+nav .logo img {
+    height: 95px;
+    margin-left: 10px;
+}
+nav .nav-links ul {
+    padding: 0%;
+    margin: 0px;
+    display: flex;
+    
+    
+}
+
+.nav-links li {
+    list-style: none;
+}
+.nav-links li :hover {
+    background-color: #fcc101;
+}
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block ;
+}
+.toggle-button {
+    position: absolute;
+    top: 2.5rem ;
+    right: 1rem ;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+     
+}
+@media (max-width: 700px ){
+    .toggle-button{
+        display: flex;
+    }
+    .nav-links {
+        display: none;
+        width: 100%;
+    }
+    nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-links ul {
+        width: 100%;
+        flex-direction: column;
+        background-image: url(img/bgblack.png);
+        background-size: cover;
+        margin: 0;
+    }
+    .nav-links li {
+        text-align: center;
+    }
+    .nav-links li a {
+        padding: .5rem 1rem;
+    }
+    .nav-links.active {
+        display: flex;
+        z-index: 10;
+    }
+}
+
+/*********************************************************** Header & Banner ***********************************************************/
+.banner {
+    
+    background-image: url(img/banner.jpeg);
+    background-position:bottom;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+} 
+.banner h1 {
+    font-family: 'Alex Brush';font-size: 80px;
+    font-weight: bold;
+    color: #ffc23a;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+
+}
+.banner h4 {
+    font-family: 'Alex Brush';font-size: 55px;
+    color: #fffefd;
+    margin: 0;
+    padding-bottom: 20px;
+}
+.btn {
+    font-weight: bold;
+}
+
+@media (max-width: 700px ){
+    .banner h1 {
+        font-size: 40px;
+    }
+    .banner h4 {
+        font-size: 27px;
+    }
+    .banner{
+        height: auto;
+    }
+}
+
+
+
+/***********************************************************   About Us  ********************************************************** */
+
+.about-us {
+    padding: 0px ;
+    margin: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-right: 15%;
+    margin-left: 15%;
+    text-align: left;
+}
+.about-us .content {
+    margin: auto;
+}
+
+.about-ussection {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.about-us .photo {
+    margin: auto;
+    margin-right: 20px;
+}
+@media (max-width:700px){
+    .about-us {
+        display: block;
+    }
+    .about-ussection{
+        font-size: 20px;
+    }
+    .about-us{
+        font-size: 15px;
+    }
+}
+
+
+
+
+
+.gallery {
+    padding-top: 50px;
+}
+
+.gallery h2{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+.portfolio-item {
+    justify-content: center;
+    padding: 30px;
+}
+
+
+/***********************************************************   Book a table  ********************************************************** */
+
+
+
+
+.booking-table{
+
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+ }
+
+.booking-table .table {
+    height: 565px;
+    max-width: 700px;
+    padding-right: 10px;
+    margin: 0;
+    border-radius: 50px;
+}
+
+ .form{
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+    height: 565px;
+    width: 100%;
+   border-radius: 50px;
+color: white;
+text-align: center;
+ }
+ .form-text{
+    text-align: center;
+    margin:0 ;
+    padding: 0;
+ }
+ .main-form div {
+    margin: 10px 2px;
+    width: 300px; 
+    display: inline-block;
+ }
+ .main-form div input {
+    width: 100%;
+    background: none;
+    border: solid 1px #ffffff;
+    font-size: 20px;
+    outline: none;
+    padding: 3px 0px 3px 10px  ;
+    color: rgb(255 255 255 / 50%);
+    margin-top: 10px ;
+ }
+ .main-form div select {
+    width: 100%;
+    background: none;
+    border: solid 1px #ffca00;
+    font-size: 20px;
+    outline: none;
+    color: white;
+    margin-top: 10px ;
+    padding: 3px 0px 3px 10px  ;
+ }
+ .main-form div span {
+    width: 100%;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+ }
+ #submit {
+    width: 100%;
+    text-align: center;
+
+}
+
+#submit input {
+ background-color: yellow;
+ color: black;
+    width: 200px;
+    transition: all .3s;
+}
+#submit input :hover{
+    background-color: black;
+    color: white;
+       width: 200px;
+   }
+@media (max-width:1314px) {
+    .table{
+        display: none;
+    }
+    
+}
+@media (max-width:700px) {
+    .booking-table{
+        background-image: none;
+        background-color: black;
+        color: white;
+    }
+    .booking-table .form-text h1{
+        margin: 0;
+        line-height: 3rem;
+        font-size: 25px;
+        color: white;
+    }
+    .booking-table .form-text p{
+        margin: 0;
+        line-height: 1rem;
+        
+        color: white;
+    }
+    .form {
+        line-height: 2.5;
+    }
+}
+
+
+/***********************************************************   Menu  ********************************************************** */
+
+
+.menu-block { margin-bottom: 30px; }
+.menu-title { border-bottom: 3px solid #e0e6e3; margin-bottom: 36px; padding-bottom: 10px; }
+.menu-content { border-bottom: 1px solid #e0e6e3; margin-bottom: 30px; }
+
+.dish-content { margin-top: 12px; margin-bottom: 40px; }
+.dish-meta { font-size: 12px; text-transform: uppercase; display: block; width: 210px; line-height: 1.7; }
+.dish-title { margin-bottom: 6px; font-size: 15px; text-transform: uppercase; font-weight: 500; position: relative; }
+.dish-price { position: absolute; right: 16px; top: 0px; font-size: 26px; color: #e03c23; font-weight: 500; font-family: 'Zilla Slab', serif; }
+.well-block .dish-meta { width: 100%; }
+.well-block .dish-price { font-size: 26px; color: #e03c23; font-weight: 500; font-family: 'Zilla Slab', serif; position: inherit; }

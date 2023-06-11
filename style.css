@@ -1,0 +1,341 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+h2{
+    color: #400d0c;
+}
+/*********************************************************** Navigation bar and Logo ***********************************************************/
+nav {
+    display: flex !important;
+    justify-content: space-between;
+    background-image: url(img/bgblack.png);
+    height: 95px;
+    text-align: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+nav .logo img {
+    height: 95px;
+    margin-left: 10px;
+}
+nav .nav-links ul {
+    padding: 0%;
+    margin: 0px;
+    display: flex;
+    
+    
+}
+
+.nav-links li {
+    list-style: none;
+}
+.nav-links li :hover {
+    background-color: #fcc101;
+}
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block ;
+}
+.toggle-button {
+    position: absolute;
+    top: 2.5rem ;
+    right: 1rem ;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+     
+}
+@media (max-width: 700px ){
+    .toggle-button{
+        display: flex;
+    }
+    .nav-links {
+        display: none;
+        width: 100%;
+    }
+    nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-links ul {
+        width: 100%;
+        flex-direction: column;
+        background-image: url(img/bgblack.png);
+        background-size: cover;
+        margin: 0;
+    }
+    .nav-links li {
+        text-align: center;
+    }
+    .nav-links li a {
+        padding: .5rem 1rem;
+    }
+    .nav-links.active {
+        display: flex;
+        z-index: 10;
+    }
+}
+
+/*********************************************************** Header & Banner ***********************************************************/
+
+.banner {
+    background-image: url(img/setting-a-restaurant-table.jpeg);
+   
+    background-position:right;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+   display: flex;
+    height: auto;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    height: 90%;
+
+}
+.header-text{
+    width: 100%;
+    
+}
+
+.banner h1 {
+    font-family: 'Alex Brush';
+    font-size: 60px;
+    font-weight: bold;
+    color: #C89601;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    line-height: 1;
+    padding-top: 130px;
+
+}
+.banner h4 {
+    font-family: 'Alex Brush';
+    font-size: 25px;
+    color: #b55a0259;
+    margin: 0;
+    padding-bottom: 20px;
+}
+.banner .btn {
+    font-weight: bold;
+    background-color: #C89601;
+}
+
+@media (max-width: 700px ){
+    .banner h1 {
+        font-size: 40px;
+    }
+    .banner h4 {
+        font-size: 27px;
+    }
+    .banner{
+        height: auto;
+    }
+}
+
+/***********************************************************   Gallery  ********************************************************** */
+
+.gallery h2 {
+    padding-bottom: 66px;
+}
+
+
+.menu{
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+/***********************************************************   About Us  ********************************************************** */
+
+.about-us {
+    padding: 0px ;
+    margin: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-right: 15%;
+    margin-left: 15%;
+    text-align: left;
+}
+.about-us .content {
+    margin: auto;
+}
+.about-ussection h2 { padding-bottom: 50px;}
+.about-ussection {
+    padding-top: 43px;
+    padding-bottom: 130px;
+    text-align: center;
+}
+
+.about-us .photo {
+    margin: auto;
+    margin-right: 20px;
+}
+@media (max-width:700px){
+    .about-us {
+        display: block;
+    }
+    .about-ussection{
+        font-size: 20px;
+    }
+    .about-us{
+        font-size: 15px;
+    }
+}
+
+
+
+
+
+.gallery {
+    padding-top: 50px;
+}
+
+.gallery h2{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+.portfolio-item {
+    justify-content: center;
+    padding: 30px;
+}
+
+
+/***********************************************************   Book a table  ********************************************************** */
+
+
+
+
+.booking-table{
+
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+ }
+
+
+
+ .form{
+   background-image: url(img/3167720.webp);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: bottom;
+
+    width: 50%;
+   border-radius: 50px;
+color: white;
+text-align: center;
+justify-content: center;
+padding: 20px;
+
+ }
+ .form-text{
+    text-align: center;
+    margin:0 ;
+    padding: 0;
+ }
+ .form-text h1 {
+    color: #fcc101;
+}
+ .main-form div {
+    margin: 10px 2px;
+    width: 300px; 
+    display: inline-block;
+ }
+ .main-form div input {
+    width: 100%;
+    background: none;
+    border: solid 1px #ffffff;
+    font-size: 20px;
+    outline: none;
+    padding: 3px 0px 3px 10px  ;
+    color: rgb(255, 255, 255);
+    margin-top: 10px ;
+ }
+ .main-form div select {
+    width: 100%;
+    background: none;
+    border: solid 1px #ffca00;
+    font-size: 20px;
+    outline: none;
+    color: white;
+    margin-top: 10px ;
+    padding: 3px 0px 3px 10px  ;
+ }
+ .main-form div span {
+    width: 100%;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+ }
+ #submit {
+    width: 100%;
+    text-align: center;
+
+}
+
+#submit input {
+ background-color: yellow;
+ color: black;
+    width: 200px;
+    transition: all .3s;
+}
+#submit input :hover{
+    background-color: black;
+    color: white;
+       width: 200px;
+   }
+@media (max-width:1314px) {
+    
+    
+}
+@media (max-width:700px) {
+    .booking-table{
+        width: 100%;
+    }
+    .booking-table .form-text h1{
+        margin: 0;
+        line-height: 3rem;
+        font-size: 45px;
+    }
+    .booking-table .form-text p{
+        margin: 0;
+        line-height: 1rem;
+    }
+    .form {
+        line-height: 2.5;
+        width: 100%;
+        border-radius: 0px;
+    }
+}
+
+
+/***********************************************************   Menu  ********************************************************** */
+
+
+.menu-block { margin-bottom: 30px; }
+.menu-title { border-bottom: 3px solid #e0e6e3; margin-bottom: 36px; padding-bottom: 10px; }
+.menu-content { border-bottom: 1px solid #e0e6e3; margin-bottom: 30px; }
+
+.dish-content { margin-top: 12px; margin-bottom: 40px; }
+.dish-meta { font-size: 12px; text-transform: uppercase; display: block; width: 210px; line-height: 1.7; }
+.dish-title { margin-bottom: 6px; font-size: 15px; text-transform: uppercase; font-weight: 500; position: relative; }
+.dish-price { position: absolute; right: 16px; top: 0px; font-size: 26px; color: #e03c23; font-weight: 500; font-family: 'Zilla Slab', serif; }
+.well-block .dish-meta { width: 100%; }
+.well-block .dish-price { font-size: 26px; color: #e03c23; font-weight: 500; font-family: 'Zilla Slab', serif; position: inherit; }
